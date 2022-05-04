@@ -4,8 +4,8 @@
   "description": "This is my personal portfolio created with `Flask + TailwindCSS`. I'd like to thank @MattLawz and @rolandsfr for helping me create this! The website is being hosted [here](https://google.com/).",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./templates/css/input.css -o ./templates/css/main.css",
-    "watch": "tailwindcss -i ./templates/css/input.css -o ./templates/css/main.css"
+    "build": "tailwindcss -i static/css/input.css -o ./templates/css/main.css",
+    "watch": "tailwindcss -i static/css/input.css -o ./templates/css/main.css"
     },
   "keywords": [],
   "author": "",
