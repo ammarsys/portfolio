@@ -1,6 +1,6 @@
 # Related third party imports
 
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_cors import CORS
 
 from flask_limiter import Limiter
@@ -29,6 +29,11 @@ def contact() -> tuple[dict[str], int]:
 
     send_email(**values)
     return {'status': 200, 'request': 'OK'}, 200
+
+
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('index.html'), 200
 
 
 if __name__ == '__main__':
