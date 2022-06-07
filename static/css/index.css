@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    background-color: #EAEDF1;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.pg_right_down {
+    position: absolute;
+    left: 80%;
+}
+
+.pg_right_up {
+    position: absolute;
+    left: 70%;
+    bottom: 52%;
+}
+
+.pg_left_middle {
+    position: absolute;
+    right: 92.5%;
+    top: 7%;
+}
