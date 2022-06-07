@@ -1,8 +1,10 @@
 .navbar {
     display: flex;
+    position: fixed;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    left: 0;
+    right: 0;
     backdrop-filter: blur(15px);
 }
 
