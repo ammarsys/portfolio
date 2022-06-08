@@ -10,7 +10,7 @@ body {
 
 .pg_right_down {
     position: absolute;
-    left: 80%;
+    left: 81%;
 }
 
 .pg_right_up {
@@ -22,18 +22,14 @@ body {
 .pg_left_middle {
     position: absolute;
     right: 92.5%;
-    top: 7%;
+    top: 2%;
 }
 
 .middle-content {
-    position: absolute;
-    bottom: 55%;
-    left: 25.5%;
+    position: relative;
+    margin-left: 25.5%;
+    padding-top: 8%;
     font-size: 21px;
-}
-
-.intro-text {
-    margin-top: -5%;
 }
 
 .header-text {
@@ -48,11 +44,11 @@ body {
 }
 
 .cta-portfolio {
-    position: absolute;
+    display: block;
+    position: relative;
     text-align: center;
     line-height: 3.6rem;
-    top: 120%;
-    width: 100%;
+    width: 39%;
     height: 22%;
     outline: 0;
     padding: 0;
@@ -64,6 +60,7 @@ body {
     background-color: #cfdfe8;
     opacity: 1;
     transition: 0.3s;
+    margin-top: 3%;
     text-decoration: none;
 }
 
@@ -73,15 +70,14 @@ body {
 }
 
 .quote {
-    position: absolute;
-    top: 175%;
     font-size: 20px;
     font-weight: lighter;
 }
 
-.quote-author {
+.pg-qa-behind {
     position: absolute;
-    top: 215%;
+    top: 93%;
+    z-index: -1;
     font-size: 20px;
     font-weight: bold;
 }
