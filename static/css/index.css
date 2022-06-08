@@ -4,6 +4,8 @@ body {
     background-color: #EAEDF1;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    user-select: none;
 }
 
 .pg_right_down {
@@ -21,4 +23,65 @@ body {
     position: absolute;
     right: 92.5%;
     top: 7%;
+}
+
+.middle-content {
+    position: absolute;
+    bottom: 55%;
+    left: 25.5%;
+    font-size: 21px;
+}
+
+.intro-text {
+    margin-top: -5%;
+}
+
+.header-text {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.header-actually-word {
+    color: #086187;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+}
+
+.cta-portfolio {
+    position: absolute;
+    text-align: center;
+    line-height: 3.6rem;
+    top: 120%;
+    width: 100%;
+    height: 22%;
+    outline: 0;
+    padding: 0;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #5d6c72;
+    background-color: #cfdfe8;
+    opacity: 1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.cta-portfolio:hover {
+    opacity: .7;
+    color: initial;
+}
+
+.quote {
+    position: absolute;
+    top: 175%;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.quote-author {
+    position: absolute;
+    top: 215%;
+    font-size: 20px;
+    font-weight: bold;
 }
