@@ -19,7 +19,7 @@
 
 /* The li, ul tags at the very inner div */
 
-.navbar-items-ul {
+.navbar-shape__ul {
     width: 70%;
     display: flex;
     justify-content: space-evenly;
@@ -28,14 +28,14 @@
     margin: 0;
 }
 
-.navbar-items-ul > li {
+.navbar-shape__ul > li {
     font-size: 20px;
     display: inline-flex;
     padding: 3rem 0; !important;
     line-height: 0;
 }
 
-.navbar-items-ul > li > a {
+.navbar-shape__ul > li > a {
     text-decoration: none;
     color: inherit;
     opacity: 1;
