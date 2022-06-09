@@ -1,3 +1,5 @@
+/* Defining the navbar shape and the inner div */
+
 .navbar {
     display: flex;
     position: fixed;
@@ -15,12 +17,7 @@
     width: 100%;
 }
 
-.navbar-item-il {
-    font-size: 20px;
-    display: inline-flex;
-    padding: 3rem 0; !important;
-    line-height: 0;
-}
+/* The li, ul tags at the very inner div */
 
 .navbar-items-ul {
     width: 70%;
@@ -31,14 +28,16 @@
     margin: 0;
 }
 
-.navbar-a {
+.navbar-items-ul > li {
+    font-size: 20px;
+    display: inline-flex;
+    padding: 3rem 0; !important;
+    line-height: 0;
+}
+
+.navbar-items-ul > li > a {
     text-decoration: none;
     color: inherit;
     opacity: 1;
     transition: 0.3s;
-}
-
-.navbar-a:hover {
-    background-color: #086187;
-    opacity: .7;
 }
