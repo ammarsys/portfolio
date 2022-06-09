@@ -8,6 +8,25 @@ body {
     user-select: none;
 }
 
+
+/* Sections */
+
+#hero, #portfolio, #about-me {
+    height: 100vh;
+}
+
+
+/* Introduction text */
+
+.intro-name {margin-top: -7%;}
+.intro-name > span {color: #086187;}
+
+.intro-status {margin-top: -2%;}
+.intro-status > span {color: #494949; font-size: 17px;}
+
+
+/* Shapes in the background with fix positioning */
+
 .pg_right_down {
     position: absolute;
     left: 81%;
@@ -25,23 +44,32 @@ body {
     top: 2%;
 }
 
+
+/* Set the flow of the page */
+
 .middle-content {
     position: relative;
     margin-left: 25.5%;
-    padding-top: 8%;
+    padding-top: 12%;
     font-size: 21px;
 }
 
-.header-text {
+
+/* Catchphrase of the landing section */
+
+.moto-hire {
     font-size: 55px;
     font-weight: 900;
 }
 
-.header-actually-word {
+.moto-hire > span {
     color: #086187;
     text-decoration: underline;
     text-underline-offset: 0.6rem;
 }
+
+
+/* CTA button which goes to the portfolio section */
 
 .cta-portfolio {
     display: block;
@@ -69,15 +97,21 @@ body {
     color: initial;
 }
 
-.quote {
+
+/* Quote in the landing page, hero section */
+
+.quote {margin-top: 5%;}
+
+.quote div + p {
     font-size: 20px;
     font-weight: lighter;
 }
 
-.pg-qa-behind {
+.quote p + img {
     position: absolute;
     top: 93%;
     z-index: -1;
+    transform: rotate(20deg);
     font-size: 20px;
     font-weight: bold;
 }
