@@ -19,11 +19,22 @@ body {
 
 /* Introduction text */
 
-.intro-name {margin-top: -7%;}
-.intro-name > span {color: #086187;}
+.intro-name {
+    margin-top: -7%;
+}
 
-.intro-status {margin-top: -2%;}
-.intro-status > span {color: #494949; font-size: 17px;}
+.intro-name > span {
+    color: #086187;
+}
+
+.intro-status {
+    margin-top: -2%;
+}
+
+.intro-status > span {
+    color: #494949;
+    font-size: 17px;
+}
 
 
 /* Shapes in the background with fix positioning */
@@ -100,7 +111,9 @@ body {
 
 /* Quote in the landing page, hero section */
 
-.quote {margin-top: 5%;}
+.quote {
+    margin-top: 5%;
+}
 
 .quote div + p {
     font-size: 20px;

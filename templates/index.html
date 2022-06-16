@@ -14,113 +14,115 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     >
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="/static/css/index.css"/>
     <link rel="stylesheet" href="/static/css/navbar.css"/>
 </head>
 <script>
-    window.onscroll = () => {loadInProjects()};
+    window.onscroll = () => {
+        loadInProjects()
+    };
 
     function loadInProjects() {
-      if (document.documentElement.scrollTop > 800) {
-          let el = document.getElementById("pyaww")
-          el.classList.remove("hidden");
-          el.classList.add("animate__animated");
-          el.classList.add("animate__fadeInUp");
-      }
+        if (document.documentElement.scrollTop > 800) {
+            let el = document.getElementById("pyaww")
+            el.classList.remove("hidden");
+            el.classList.add("animate__animated");
+            el.classList.add("animate__fadeInUp");
+        }
     }
 </script>
 <body>
-    <!-- Navbar section -->
-    <div class="navbar-shape">
-        <div class="container">
-            <div class="navbar">
-                <ul class="navbar-shape__ul">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about_me">About me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+<!-- Navbar section -->
+<div class="navbar-shape">
+    <div class="container">
+        <div class="navbar">
+            <ul class="navbar-shape__ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </div>
+</div>
 
-    <div id="hero">
-        <div class="container">
-            <img src="/static/images/pg_right_down.png" alt="pg_any_any_tiny.png" class="pg_right_down">
-            <img src="/static/images/pg_right_up.png" alt="pg_right_up.png" class="pg_right_up">
-            <img src="/static/images/pg_left_middle.png" alt="pg_left_middle.png" class="pg_left_middle">
-        </div>
-        <div class="middle-content">
-            <div>
-                <img src="/static/images/pg_any_any_tiny.png" alt="pg_any_any_tiny.png">
-                <p class="intro-name">Hey there, I’m <span>Novu</span>,</p>
-                <p class="intro-status"><span>Full stack Web developer</span></p>
-            </div>
-
-            <div>
-                <p class="moto-hire">I create websites</p>
-                <p class="moto-hire" style="margin-top: -3.5%;">
-                    that <span>actually</span> work.
-                </p>
-            </div>
-
-            <div>
-                <a class="cta-portfolio" href="#portfolio">
-                    S E E &nbsp;M Y&nbsp;  W O R K
-                </a>
-            </div>
-
-            <div class="quote">
-                <p>
-                    <i>
-                        “Any fool can write code that a computer can understand. <br>
-                        Good programmers write code that humans can understand.”
-                    </i>
-                </p>
-                <p>– Martin Fowler</p>
-
-                <img
-                        src="/static/images/pg_any_any_tiny.png"
-                        alt="pg_any_any_tiny.png"
-                >
-            </div>
-        </div>
+<div id="hero">
+    <div class="container">
+        <img src="/static/images/pg_right_down.png" alt="pg_any_any_tiny.png" class="pg_right_down">
+        <img src="/static/images/pg_right_up.png" alt="pg_right_up.png" class="pg_right_up">
+        <img src="/static/images/pg_left_middle.png" alt="pg_left_middle.png" class="pg_left_middle">
     </div>
-
-    <div id="portfolio">
-        <div class="container">
-            <img src="/static/images/pg_left_middle.png" alt="pg_left_middle.png" class="pg_left_middle">
-            <img src="/static/images/pg_right_down.png" alt="pg_right_down.png" class="pg_right_down">
+    <div class="middle-content">
+        <div>
+            <img src="/static/images/pg_any_any_tiny.png" alt="pg_any_any_tiny.png">
+            <p class="intro-name">Hey there, I’m <span>Novu</span>,</p>
+            <p class="intro-status"><span>Full stack Web developer</span></p>
         </div>
 
-        <div class="middle-content">
+        <div>
+            <p class="moto-hire">I create websites</p>
+            <p class="moto-hire" style="margin-top: -3.5%;">
+                that <span>actually</span> work.
+            </p>
+        </div>
+
+        <div>
+            <a class="cta-portfolio" href="#portfolio">
+                S E E &nbsp;M Y&nbsp; W O R K
+            </a>
+        </div>
+
+        <div class="quote">
+            <p>
+                <i>
+                    “Any fool can write code that a computer can understand. <br>
+                    Good programmers write code that humans can understand.”
+                </i>
+            </p>
+            <p>– Martin Fowler</p>
+
             <img
-                    style="z-index: -1;"
                     src="/static/images/pg_any_any_tiny.png"
                     alt="pg_any_any_tiny.png"
             >
-            <p class="projects-header">Projects</p>
+        </div>
+    </div>
+</div>
 
-            <div class="pyaww hidden" id="pyaww">
-                    <div class="divider">
-                        <img
-                            src="/static/images/pyaww.png"
-                            alt="pg_any_any_tiny.png"
-                        >
+<div id="portfolio">
+    <div class="container">
+        <img src="/static/images/pg_left_middle.png" alt="pg_left_middle.png" class="pg_left_middle">
+        <img src="/static/images/pg_right_down.png" alt="pg_right_down.png" class="pg_right_down">
+    </div>
 
-                        <p>
-                            This is a feature-rich wrapper around<br> the PythonAnywheres's API. It utilizes<br> modern Python
-                            features and concepts<br> such as typing & asyncio for concurrency.<br><br>
-                            It's my first large-scale project which<br> incorporatates my Python skillset as a whole.
-                        </p>
-                        <a href="https://github.com/novusys/pyaww/">
-                            <i class="fa-brands fa-github fa-xl"></i>&emsp;View work
-                        </a>
-                    </div>
+    <div class="middle-content">
+        <img
+                style="z-index: -1;"
+                src="/static/images/pg_any_any_tiny.png"
+                alt="pg_any_any_tiny.png"
+        >
+        <p class="projects-header">Projects</p>
+
+        <div class="pyaww hidden" id="pyaww">
+            <div class="divider">
+                <img
+                        src="/static/images/pyaww.png"
+                        alt="pg_any_any_tiny.png"
+                >
+
+                <p>
+                    This is a feature-rich wrapper around<br> the PythonAnywheres's API. It utilizes<br> modern Python
+                    features and concepts<br> such as typing & asyncio for concurrency.<br><br>
+                    It's my first large-scale project which<br> incorporatates my Python skillset as a whole.
+                </p>
+                <a href="https://github.com/novusys/pyaww/">
+                    <i class="fa-brands fa-github fa-xl"></i>&emsp;View work
+                </a>
             </div>
         </div>
+    </div>
 </body>
 </html>
