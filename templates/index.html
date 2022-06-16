@@ -9,16 +9,30 @@
             integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
             crossorigin="anonymous"
     >
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="/static/css/index.css"/>
     <link rel="stylesheet" href="/static/css/navbar.css"/>
 </head>
-<body>
-    <div class="container">
-        <img src="/static/images/pg_right_down.png" alt="pg_any_any_tiny.png" class="pg_right_down">
-        <img src="/static/images/pg_right_up.png" alt="pg_right_up.png" class="pg_right_up">
-        <img src="/static/images/pg_left_middle.png" alt="pg_left_middle.png" class="pg_left_middle">
-    </div>
+<script>
+    window.onscroll = () => {loadInProjects()};
 
+    function loadInProjects() {
+      if (document.documentElement.scrollTop > 800) {
+          let el = document.getElementById("pyaww")
+          el.classList.remove("hidden");
+          el.classList.add("animate__animated");
+          el.classList.add("animate__fadeInUp");
+      }
+    }
+</script>
+<body>
     <!-- Navbar section -->
     <div class="navbar-shape">
         <div class="container">
@@ -34,6 +48,11 @@
     </div>
 
     <div id="hero">
+        <div class="container">
+            <img src="/static/images/pg_right_down.png" alt="pg_any_any_tiny.png" class="pg_right_down">
+            <img src="/static/images/pg_right_up.png" alt="pg_right_up.png" class="pg_right_up">
+            <img src="/static/images/pg_left_middle.png" alt="pg_left_middle.png" class="pg_left_middle">
+        </div>
         <div class="middle-content">
             <div>
                 <img src="/static/images/pg_any_any_tiny.png" alt="pg_any_any_tiny.png">
@@ -64,12 +83,44 @@
                 <p>– Martin Fowler</p>
 
                 <img
-                        class="pg-qa-behind"
                         src="/static/images/pg_any_any_tiny.png"
                         alt="pg_any_any_tiny.png"
                 >
             </div>
         </div>
     </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <img src="/static/images/pg_left_middle.png" alt="pg_left_middle.png" class="pg_left_middle">
+            <img src="/static/images/pg_right_down.png" alt="pg_right_down.png" class="pg_right_down">
+        </div>
+
+        <div class="middle-content">
+            <img
+                    style="z-index: -1;"
+                    src="/static/images/pg_any_any_tiny.png"
+                    alt="pg_any_any_tiny.png"
+            >
+            <p class="projects-header">Projects</p>
+
+            <div class="pyaww hidden" id="pyaww">
+                    <div class="divider">
+                        <img
+                            src="/static/images/pyaww.png"
+                            alt="pg_any_any_tiny.png"
+                        >
+
+                        <p>
+                            This is a feature-rich wrapper around<br> the PythonAnywheres's API. It utilizes<br> modern Python
+                            features and concepts<br> such as typing & asyncio for concurrency.<br><br>
+                            It's my first large-scale project which<br> incorporatates my Python skillset as a whole.
+                        </p>
+                        <a href="https://github.com/novusys/pyaww/">
+                            <i class="fa-brands fa-github fa-xl"></i>&emsp;View work
+                        </a>
+                    </div>
+            </div>
+        </div>
 </body>
 </html>

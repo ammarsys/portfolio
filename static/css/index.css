@@ -12,6 +12,7 @@ body {
 /* Sections */
 
 #hero, #portfolio, #about-me {
+    position: relative;
     height: 100vh;
 }
 
@@ -41,7 +42,6 @@ body {
 .pg_left_middle {
     position: absolute;
     right: 92.5%;
-    top: 2%;
 }
 
 
@@ -114,4 +114,61 @@ body {
     transform: rotate(20deg);
     font-size: 20px;
     font-weight: bold;
+}
+
+
+/* Projects header, portfolio section */
+
+.projects-header {
+    position: relative;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -7%;
+    margin-bottom: 5%;
+    z-index: 2;
+}
+
+
+/* Portfolio projects -- pyaww */
+
+.pyaww {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px 0 15px 20px;
+    text-align: left;
+    background-color: #F5F5F5;
+}
+
+.pyaww .divider {
+    border-left: 2px solid #6191C9;
+    padding: 20px;
+    height: 100%;
+}
+
+.pyaww .divider > p {
+    margin-top: 1.7rem;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.pyaww .divider > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4e5b9b;
+    font-weight: lighter;
+    margin-top: 7%;
+    color: white;
+    height: 2rem;
+    width: 60%;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.hidden {
+    visibility: hidden;
 }
