@@ -13,7 +13,7 @@
 
 .navbar-shape {
     position: relative;
-    z-index:2;
+    z-index: 3;
     width: 100%;
 }
 
@@ -40,4 +40,8 @@
     color: inherit;
     opacity: 1;
     transition: 0.3s;
+}
+
+.navbar-shape__ul > li > a:hover {
+    color: #6191C9;
 }
