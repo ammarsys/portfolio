@@ -133,12 +133,15 @@ body {
 /* Projects header, portfolio section */
 
 .projects-header {
+    background-image: url("/static/images/pg_any_any_tiny.png");
+    background-repeat: no-repeat;
+    min-height: 15vh;
+}
+
+.projects-header > p {
     position: relative;
     font-size: 40px;
     font-weight: bold;
-    margin-top: -7%;
-    margin-bottom: 5%;
-    z-index: 2;
 }
 
 
