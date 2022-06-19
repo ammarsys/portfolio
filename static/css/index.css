@@ -42,17 +42,20 @@ body {
 .pg_right_down {
     position: absolute;
     left: 81%;
+    max-width: 100%;
 }
 
 .pg_right_up {
     position: absolute;
     left: 70%;
     bottom: 52%;
+    max-width: 100%;
 }
 
 .pg_left_middle {
     position: absolute;
     right: 92.5%;
+    max-width: 100%;
 }
 
 
