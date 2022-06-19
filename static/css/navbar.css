@@ -2,25 +2,24 @@
 
 .navbar {
     display: flex;
-    position: fixed;
+    position: sticky;
     justify-content: space-evenly;
     align-items: center;
     left: 0;
     right: 0;
     backdrop-filter: blur(15px);
-    background-color: rgba(240, 242, 245, .5)
 }
 
 .navbar-shape {
     position: relative;
     z-index: 3;
-    width: 100%;
+    background-color: rgba(240, 242, 245, .5)
 }
 
 /* The li, ul tags at the very inner div */
 
 .navbar-shape__ul {
-    width: 70%;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
