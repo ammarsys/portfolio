@@ -2,24 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio @ novusys</title>
-    <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-            crossorigin="anonymous"
-    >
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    >
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="/static/css/index.css"/>
-</head>
+    <title>Novu</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<head>
 <body>
+    <div class="wrapped">
+        <div class="properties">
+            <div class="info">
+                <img src="./assets/image/logo.png" alt="ProfilePic" class="img" />
+                <h1>novusys</h1>
+                <h1>Hi there, I'm <span class="namegradient">Novu</span>.</h1>
+                <p>I'm a teenage full-stack web developer from Bosnia and Herzegovina. While Python is my specialty, I also work with JS, HTML & CSS, C and SQL.</p>
+                <p>On a daily basis, I work with web applications, Discord bots and APIs.</p>
+                <button class="btn">See My Work</button>
+            </div>
+            <div class="contact">
+                <h1>Contact Me</h1>
+                <form action="form.php">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" required>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<!-- ammar, please fix the flexbox shit im gonna fucking explode -->
