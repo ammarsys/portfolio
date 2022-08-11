@@ -1,7 +1,7 @@
 # Portfolio
 
-This is my perfonal portfolio created with a Flask backend. I would like to thank @rolandsfr for helping me with this
-project.
+This is my perfonal portfolio created with TailwindCSS, and a python flask backend. 
+
 
 ## Installing & running
 
@@ -20,6 +20,12 @@ py -m pip install requirements.txt -r
 ```
 ```
 py app.py
+```
+```
+npm init
+```
+```
+npm run watch
 ```
 
 and, voilla! Navigate to the localhost link to see it in action.

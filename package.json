@@ -1,0 +1,26 @@
+{
+  "name": "novusysportfolio",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./static/css/input.css -o ./static/css/main.css",
+    "watch": "npx tailwindcss -i ./static/css/input.css -o ./static/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novusys/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novusys/portfolio/issues"
+  },
+  "homepage": "https://github.com/novusys/portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+  }
+}
