@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="../static/images/logo.png">
     <link rel="stylesheet" href="../static/css/main.css">
     <script src="../static/js/links.js"></script>
+    <script src="../static/js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="bg-backgroundBlue text-center text-buttonText font-sans">
     <div class="grid h-screen place-items-center">
@@ -29,7 +31,7 @@
     <!-- Start Contact Form -->
     <div class="flex flex-col space-y-16 mx-auto max-w-xl">
     <h1 class="text-4xl font-bold uppercase mt-12">Contact Me <img src="../static/images/bosniaherzegovina.png" alt="B&H Flag" class="rounded-full w-10 h-10 inline" /> <img src="../static/images/england.png" alt="England Flag" class="rounded-full w-10 h-10 inline" /></h1>
-    <form>
+    <form onsubmit="return false">
          <div class="mb-14">
             <label class="absolute flex -mt-3 mb-20 ml-8 z-50 bg-backgroundBlue px-2" for="name">Your Name</label>
             <input class="bg-transparent border-2 border-lightBlue rounded-full focus:outline-none px-4 py-2 w-full" type="text" id="name" minlength="2" required>
@@ -42,7 +44,7 @@
             <label class="absolute flex -mt-3 mb-20 ml-8 z-50 bg-backgroundBlue px-2" for="message">Your Message</label>
             <textarea class="bg-transparent border-2 border-lightBlue rounded-xl focus:outline-none px-4 py-2 w-full resize-none" id="message" minlength="5" rows="6" required></textarea>
         </div>
-        <button type="submit" class="bg-regBlue text-buttonText p-3 px-4 pt-2 mt-12 uppercase font-semibold tracking-1 rounded-lg hover:bg-regBlueHover w-full">Send</button>
+        <button type="submit" class="bg-regBlue text-buttonText p-3 px-4 pt-2 mt-12 uppercase font-semibold tracking-1 rounded-lg hover:bg-regBlueHover w-full" onclick="contactMe()">Send</button>
     </form>
     <!-- End Contact Form -->
     </div>
