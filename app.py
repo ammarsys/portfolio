@@ -19,7 +19,7 @@ CORS(app)
 @app.route("/api/contact", methods=["POST"])
 @limiter.limit(limit_value="2/second")
 def contact() -> tuple[dict[str], int]:
-    values = request.form.to_dict()
+    values = request.get_json()
 
     if (
         len(values["name"]) > 50
