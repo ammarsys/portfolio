@@ -12,19 +12,19 @@ function contactMe() {
 
     if (validateEmail(data["email"])) {
         fetch("http://127.0.0.1:5000/api/contact", {
-              method: "POST",
-              headers: {'Content-Type': 'application/json'},
-              body: JSON.stringify(data)
+            method: "POST",
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
         })
 
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'Your message has been sent.',
-                    icon: 'success',
-                    confirmButtonText: 'Yerr',
-                    confirmButtonColor: 'hsl(204, 14%, 29%)',
-                })
-        
+        Swal.fire({
+            title: 'Success!',
+            text: 'Your message has been sent.',
+            icon: 'success',
+            confirmButtonText: 'Yerr',
+            confirmButtonColor: 'hsl(204, 14%, 29%)',
+        })
+
     } else {
         Swal.fire({
             title: 'M8 wot tf!',

@@ -7,18 +7,20 @@
     <title>Portfolio @ Novusys</title>
     <link rel="stylesheet" href="../static/css/main.css">
     <script src="../static/js/links.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js" async></script>
 </head>
 <body class="bg-backgroundBlue text-center text-white font-sans">
-    <div class="flex flex-col items-center justify-center h-screen space-y-12">
-      <h1 class="text-8xl font-bold">404 Error</h1>
-        <p class="text-2xl italic">Couldn't find requested page</p>
-        <button class="bg-regBlue text-buttonText p-3 px-4 pt-2 w-auto uppercase font-semibold tracking-1 rounded-lg hover:bg-regBlueHover" onclick="goHome()">Go Back Home</button>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
+<div class="flex flex-col items-center justify-center h-screen space-y-12">
+    <h1 class="text-8xl font-bold">404 Error</h1>
+    <p class="text-2xl italic">Couldn't find requested page</p>
+    <button class="bg-regBlue text-buttonText p-3 px-4 pt-2 w-auto uppercase font-semibold tracking-1 rounded-lg hover:bg-regBlueHover"
+            onclick="goHome()">Go Back Home
+    </button>
+</div>
 <script>
-window.addEventListener('load', () => {
-  quicklink.listen();
-});
+    window.addEventListener('load', () => {
+        quicklink.listen();
+    });
 </script>
 </body>
 </html>
