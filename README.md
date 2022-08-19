@@ -28,11 +28,11 @@ npm init
 npm run watch
 ```
 
-For the contact feauture to work, you must create a `.env` file at the root directory containing the following variables,
+For the contact feauture to work, you must create a `.env` file at the `/utils` directory containing the following variables,
 
 ```
-PORTFOLIO_PASSWORD=...
-PORTFOLIO_EMAIL=..
+PASSWORD=...
+EMAIL=..
 ```
 
 

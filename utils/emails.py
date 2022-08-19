@@ -1,25 +1,31 @@
 # Standard library imports
 
-import smtplib
+import os
+import requests
 
-from email.message import EmailMessage
+from os.path import join, dirname
 
 # Related third party imports
 
-from dotenv import dotenv_values
+from dotenv import load_dotenv
 
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
 
-SECRET = dotenv_values(".env")
+WEBHOOK = os.environ.get("WEBHOOK")
 
 
 def send_email(name: str, email: str, content: str) -> None:
-    msg = EmailMessage()
-
-    msg.set_content(content)
-    msg["Subject"] = f"{email} | {name}"
-    msg["To"] = "amarftw1@gmail.com"
-
-    server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-    server.login(SECRET["PORTFOLIO_EMAIL"], SECRET["PORTFOLIO_PASSWORD"])
-    server.send_message(msg)
-    server.quit()
+    requests.post(WEBHOOK, json={
+        "content": "@everyone - please respond to this email",
+        "embeds": [
+            {
+                "description": content,
+                "color": 16777215,
+                "footer": {
+                    "text": f"{email} | {name}"
+                }
+            }
+        ],
+        "attachments": []
+    })
