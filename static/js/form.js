@@ -11,27 +11,22 @@ function contactMe() {
     };
 
     if (validateEmail(data["email"])) {
-        fetch("http://127.0.0.1:5000/api/contact", {
+        fetch("/api/contact", {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
-        })
+        }).then(_ =>
+            Swal.fire({
+                text: 'Successfully sent your message.',
+            })
+        )
 
-        Swal.fire({
-            title: 'Success!',
-            text: 'Your message has been sent.',
-            icon: 'success',
-            confirmButtonText: 'Yerr',
-            confirmButtonColor: 'hsl(204, 14%, 29%)',
-        })
 
     } else {
         Swal.fire({
-            title: 'M8 wot tf!',
-            text: 'yerr fookin cunt what is man giving me false email like "low it"',
+            title: 'Bad Information',
+            text: "Looks like your email doesn't seem right, could you double check it?",
             icon: 'error',
-            confirmButtonText: 'bruvit',
-            confirmButtonColor: 'hsl(204, 14%, 29%)',
         })
     }
 }
