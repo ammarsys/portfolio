@@ -9,6 +9,10 @@
 This is my portfolio which I've built with Matts (@MattLawz) help. It utilises a Python Flask backend and a TailwindCSS
 frontend. The site is currently running over at Pythonanywhere, specifically [here](https://novusys.pythonanywhere.com/).
 
+If you'd like to look at the current, or future design, head over to the 
+[Figma file](https://www.figma.com/file/MP9zPKn8kt8E2fD18oOiKP/portfolio-novu).
+
+
 
 ## Installing & running
 
@@ -32,4 +36,4 @@ PORTFOLIO_EMAIL=..
 ```
 
 
-After that, you can navigate to the Flask localhost (should be localhost:5000/) to see it in action.
+After that, you can navigate to the Flask localhost (should be localhost:5000) to see it in action.
