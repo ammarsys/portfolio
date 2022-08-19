@@ -3,5 +3,5 @@ function openGithub() {
 }
 
 function goHome() {
-    window.open("../templates/index.html", "_self");
+    window.location.href = "/";
 }
