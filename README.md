@@ -32,7 +32,7 @@ py -m pip install requirements.txt -r
 npm run watch
 ```
 
-- For the contact feauture to work, create a `.env` file (at `/utils` directory) containing a Discord webhook,
+- For the contact feature to work, create a `.env` file (at `/utils` directory) containing a Discord webhook,
 ```
 cd utils
 echo WEBHOOK=your-webhook-url-here >> .env
