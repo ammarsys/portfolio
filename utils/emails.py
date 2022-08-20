@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 dotenv_path = join(dirname(__file__), ".env")
 load_dotenv(dotenv_path)
 
-WEBHOOK = os.environ.get("WEBHOOK")
+WEBHOOK = str(os.environ.get("WEBHOOK"))
 
 
 def send_email(name: str, email: str, content: str) -> None:
