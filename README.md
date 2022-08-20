@@ -20,20 +20,27 @@ If you'd like to look at the current, or future design, head over to the
 
 In case you want to run a local version of this website, please follow these steps,
 
+- Clone the repository and change the CD,
 ```
 git clone https://github.com/novusys/portfolio
 cd portfolio
+```
+
+- Install the Python and Node dependencies,
+```
 py -m pip install requirements.txt -r
-npm init
 npm run watch
 ```
 
-For the contact feauture to work, you must create a `.env` file at the `/utils` directory containing the following variables,
-
+- For the contact feauture to work, create a `.env` file (at `/utils` directory) containing a Discord webhook,
 ```
-PASSWORD=...
-EMAIL=..
+cd utils
+echo WEBHOOK=your-webhook-url-here >> .env
 ```
 
+- Lastly, run the server,
+```
+py app.py
+```
 
-After that, you can navigate to the Flask localhost (should be localhost:5000) to see it in action.
+After these steps, navigate to the Flask localhost (should be localhost:5000) to see it in action.
