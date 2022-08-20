@@ -1,9 +1,11 @@
 function validateEmail(email) {
+    // Email validation function
     let re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
 
 function contactMe() {
+    // Contact function (/api/contact), tests for a lot of things, uses SweetAlert4 for popups
     let data = {
         "email": document.getElementById("email").value,
         "content": document.getElementById("message").value,

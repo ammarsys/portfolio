@@ -19,6 +19,7 @@ CORS(app)
 @app.route("/api/contact", methods=["POST"])
 @limiter.limit(limit_value="2/second")
 def contact() -> tuple[dict[str], int]:
+    """Contact route, has a ratelimit of 2/second"""
     values = request.get_json()
 
     if (
