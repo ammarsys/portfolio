@@ -11,7 +11,6 @@ function contactMe() {
         "content": document.getElementById("message").value,
         "name": document.getElementById("name").value
     };
-    console.log(Object.values(data).includes(''));
 
     if (Object.values(data).includes('')) {
         Swal.fire({
