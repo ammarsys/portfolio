@@ -15,8 +15,9 @@ function contactMe() {
     if (Object.values(data).includes('')) {
         Swal.fire({
             text: 'Looks like one of the fields is empty, please fill them in.',
-            background: "#3a435e",
-            color: "#fff"
+            background: "hsl(225, 24%, 30%)",
+            color: "hsl(0, 0%, 100%)",
+            confirmButtonColor: 'hsl(204, 14%, 29%)',
         })
     } else {
         if (validateEmail(data["email"])) {
@@ -28,8 +29,9 @@ function contactMe() {
                 Swal.fire({
                     text: 'Successfully sent your message.',
                     icon: "success",
-                    background: "#3a435e",
-                    color: "#fff"
+                    background: "hsl(225, 24%, 30%)",
+                    color: "hsl(0, 0%, 100%)",
+                    confirmButtonColor: 'hsl(204, 14%, 29%)',
                 })
             )
 
@@ -40,7 +42,8 @@ function contactMe() {
                 text: "Looks like your email doesn't seem right, could you double check it?",
                 icon: 'error',
                 background: "#3a435e",
-                color: "#fff"
+                color: "#fff",
+                confirmButtonColor: 'hsl(204, 14%, 29%)',
             })
         }
     }
