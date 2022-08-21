@@ -39,8 +39,9 @@ cd utils
 echo WEBHOOK=your-webhook-url-here >> .env
 ```
 
-- Lastly, run the server,
+- Lastly, cd back and run the server,
 ```
+cd ..
 py app.py
 ```
 
