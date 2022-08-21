@@ -17,7 +17,7 @@ If you'd like to look at the current, or future design, head over to the
 ## Installing & running
 
 > Please ensure you have Python 3.9+.
-> If you're deploying this on PythonAnywhere, you may need to [set up Node](https://help.pythonanywhere.com/pages/Node/)
+> If you're deploying this on PythonAnywhere, you may need to [set up Node](https://help.pythonanywhere.com/pages/Node/).
 
 In case you want to run a local version of this website, please follow these steps,
 
