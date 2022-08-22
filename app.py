@@ -1,3 +1,7 @@
+# Standard library imports
+
+from typing import Union
+
 # Related third party imports
 
 from flask import Flask, request, render_template
@@ -17,7 +21,7 @@ CORS(app)
 
 @app.route("/api/contact", methods=["POST"])
 @limiter.limit(limit_value="2/second")
-def contact() -> tuple[dict[str, int | str], int]:
+def contact() -> tuple[dict[str, Union[int, str]], int]:
     """Contact route, has a ratelimit of 2/second"""
     values = request.get_json()
 
