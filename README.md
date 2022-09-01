@@ -1,13 +1,13 @@
 <div align="center">
     <h1>Portfolio - novusys</h1>
     <i>
-        Built with Flask & TailwindCSS
+        Built with Flask & Vanilla CSS
     </i>
 </div>
 <br>
 
-This is my portfolio which I've built with Matts ([@MattLawz](https://github.com/MattLawz)) help. 
-It utilises a Python Flask backend and a TailwindCSS frontend. The site is currently running over at Pythonanywhere, 
+This is my portfolio.
+It utilises a Python Flask backend and a TailwindCSS frontend. The site is currently running over at GitHub pages, 
 specifically [here](https://novusys.pythonanywhere.com/).
 
 If you'd like to look at the current, or future design, head over to the 
@@ -18,7 +18,6 @@ If you'd like to look at the current, or future design, head over to the
 ## Installing & running
 
 > Please ensure you have Python 3.9+.
-> If you're deploying this on PythonAnywhere, you may need to [set up Node](https://help.pythonanywhere.com/pages/Node/).
 
 In case you want to run a local version of this website, please follow these steps,
 
@@ -28,21 +27,13 @@ git clone https://github.com/novusys/portfolio
 cd portfolio
 ```
 
-- Install the Python and Node dependencies,
+- Install the Pythondependencies,
 ```
 py -m pip install -r requirements.txt
-npm run watch
 ```
 
-- For the contact feature to work, create a `.env` file (at `/utils` directory) containing a Discord webhook,
+- Lastly, run the server,
 ```
-cd utils
-echo WEBHOOK=your-webhook-url-here >> .env
-```
-
-- Lastly, cd back and run the server,
-```
-cd ..
 py app.py
 ```
 
