@@ -7,7 +7,7 @@
 <br>
 
 This is my portfolio.
-It utilises a Python Flask backend and a TailwindCSS frontend. The site is currently running over at GitHub pages, 
+It utilises a Python Flask backend and a TailwindCSS frontend. The site is currently running over at PythonAnywhere, 
 specifically [here](https://novusys.pythonanywhere.com/).
 
 If you'd like to look at the current, or future design, head over to the 
